@@ -1,0 +1,19 @@
+<!--templates/base.html-->
+{% load static %}
+
+<html>
+    <head>
+        <title>Word Blog</title>
+        <link rel = "stylesheet" href='{% static "css/style.css" %}'>
+    </head>
+    <body>
+        <header>
+            <h2 class="nav-left"><a href={% url 'home' %}>Word Blog</a></h2>
+            <div class="nav-right"><p><a href={% url 'blog_new' %}>+New_word</a></p>
+        </header>
+    <div>
+        {%block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html>

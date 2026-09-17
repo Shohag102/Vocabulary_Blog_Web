@@ -1,0 +1,12 @@
+<!--templates/blog_new.html-->
+
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1>Word Entry Form</h1>
+<form action="" method="post">{% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Save">
+</form> 
+{% endblock content %}

@@ -1,0 +1,9 @@
+<!--temaples/blog_detail.html-->
+{% extends "base.html" %}
+
+{% block content %}
+<div class = "blog-entry">
+    <h3>{{object.title}}</h3>
+        <p>{{object.body}}</p>
+</div>
+{% endblock content %}
